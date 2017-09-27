@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title> Occupation </title>
+        </head>
+        <body>
+                <table>
+                        <tr>
+                                <th>Job Class</th>
+                                <th>Percentage</th>
+                        </tr>
+                {% for each in dictJob %}
+
+                        <tr> 
+                                <td>
+                                        {{each}}
+                                </td>
+                                <td>
+                                        {{dictJob[each]}}
+                                </td>
+                        </tr>
+                {% endfor %}
+                <tr>
+                                <th>Total</th>
+                                <th>99.8</th>
+                        </tr>
+                </table>
+                <br>
+                Your chosen occupation is: {{randJob}}
+        </body>
+</html>
